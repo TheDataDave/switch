@@ -9,6 +9,11 @@ The switch library provides a Switch class that can be used to create switch sta
 
 The case method takes a condition as an argument. If the condition evaluates to True, the corresponding function is executed. The default method is executed if no match is found.
 
+## Installation
+```rb
+pip install simple-switch
+```
+
 ### Here is an example of how to use the Switch class:
 ```rb
 from switch import Switch
