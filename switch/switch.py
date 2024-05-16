@@ -37,18 +37,3 @@ class Switch:
         if exc_type is Break:
             return True
         return False
-
-
-if __name__ == '__main__':
-    with Switch(1) as s:
-        if s.case(s.value == 1):
-            pass
-        if s.case(s.value == 2):
-            pass
-        if s.case(s.value == 3):
-            print("1, 2, 3!!")
-            raise Break()  # Exit the Switch context
-        if s.case(s.value == 4):
-            print("Won't see this... :(")
-        if s.default:
-            print('default')
