@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="switch",
+    name="simple-switch",
     version=VERSION,
     author='David Flanders',
     author_email='thedatadave@gmail.com',
