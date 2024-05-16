@@ -1,19 +1,25 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
-    name='switch',
-    version='0.2.0',  # Update version to reflect new implementation
-    description='A simple and flexible switch statement implementation for Python.',
+VERSION = '0.2.0'
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="switch",
+    version=VERSION,
     author='David Flanders',
     author_email='thedatadave@gmail.com',
     url='https://github.com/TheDataDave/switch',
-    packages=find_packages(),
-    install_requires=[],
+    description="A simple and flexible switch statement implementation for Python.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    keywords=['python', 'conditional', 'logic', 'switch', 'case', 'if-else', 'if', 'else'],
+    packages=setuptools.find_packages(),
     classifiers=[
-        'Development Status :: 4 - Beta',  # Update development status
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Operating System :: OS Independent",
     ],
 )
-
